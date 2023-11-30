@@ -1,0 +1,9 @@
+ro.crypto.volume.filenames_mode=aes-256-xts
+ro.sys.usb.storage.type=mtp
+ro.mtk_tee_gp_support=1
+ro.adb.secure=0
+ro.mediatek.platform=mt6761
+ro.hardware=mt6761
+ro.hardware.kmsetkey=default
+ro.mtk_microtrust_tee_support=1
+ro.hardware.gatekeeper=default

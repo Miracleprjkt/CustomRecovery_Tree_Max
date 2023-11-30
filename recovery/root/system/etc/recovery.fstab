@@ -1,0 +1,10 @@
+# Fstab Recovery
+system           /system         ext4    ro     wait,slotselect,logical
+vendor           /vendor         ext4    ro     wait,slotselect,logical
+product          /product        ext4    ro     wait,slotselect,logical
+
+/dev/block/platform/bootdevice/by-name/md_udc /metadata ext4 noatime,nosuid,nodev,discard wait,formattable,first_stage_mount
+
+/dev/block/platform/bootdevice/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065 wait,check,quota,reservedsize=128M,formattable,resize,checkpoint=fs,filedecryption=aes-256-xts
+
+/dev/block/platform/bootdevice/by-name/misc      /misc     emmc defaults defaults
