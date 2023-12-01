@@ -14,34 +14,33 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Miracleprjkt/CustomRecovery_Tree_Max'
+        default: 'https://github.com/IMYdev/shrp_device_infinix_lion'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'android-11'
+        default: 'shrp-11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/infinix/Max'
+        default: 'device/infinix/lion'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
-        required: true
-        default: 'https://github.com/Miracleprjkt/CustomRecovery_Tree_Max'
+        required: false
+      COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
-        required: True
-        default: 'CustomRecovery/Tree/Max'
+        required: false
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'Max'
+        default: 'lion'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_Max'
+        default: 'omni_lion'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'recovery'
+        default: 'boot'
 
 jobs:
   build:
