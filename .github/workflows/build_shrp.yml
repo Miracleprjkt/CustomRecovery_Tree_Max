@@ -1,4 +1,4 @@
-name: Recovery Build
+name: Recovery Build-SHRP
 
 on:
   workflow_dispatch:
