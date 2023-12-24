@@ -13,11 +13,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/infinix/Max/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Max
-PRODUCT_NAME := twrp_Max
+PRODUCT_NAME := omni_Max
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Max
 PRODUCT_MANUFACTURER := infinix
